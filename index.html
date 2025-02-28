@@ -29,7 +29,7 @@
 
             <div class="flex gap-3 items-center">
                 <img class="w-9 h-9" src="assets/checkbox.png" alt="checkbox">
-                <span class="text-3xl font-bold mr-10 text-[#00303C]">23</span>
+                <span id="completeTask" class="text-3xl font-bold mr-10 text-[#00303C]">23</span>
                 <img src="assets/theme-btn.png" alt="themeButton">
             </div>
 
@@ -55,12 +55,12 @@
                         <img class="w-8 h-8" src="assets/checkbox.png" alt="checkbox">
                         <div>
                             <p>Task Asssigned</p>
-                            <h3 class="text-2xl font-bold text-[#00303C] ">05</h3>
+                            <h3 class="text-2xl font-bold text-[#00303C] "><span id="zero">0</span><span id="assignTask">0</span></h3>
                         </div>
                     </div>
 
                     <!-- center -->
-                    <div class=" center-div flex col-span-2 p-6 rounded-xl items-center gap-5">
+                    <div class=" center-div flex col-span-2 p-6 rounded-xl items-center gap-5 cursor-pointer">
                         <img src="assets/board.png" alt="checkbox">
                         <div>
                             <p class="font-medium text-2xl text-white">Discover Something <br>New Today</p>
@@ -71,8 +71,8 @@
                     <div class="flex col-span-1 p-6 bg-gray-100 rounded-xl items-center gap-5">
                         <img class="w-10 h-10" src="assets/calender.png" alt="calender">
                         <div>
-                            <p class="text-xl text-[#00303C]">Wed,</p>
-                            <h3 class="text-xl font-bold text-[#00303C]">July 28 2025</h3>
+                            <p id="dayName" class="text-xl text-[#00303C]">Wed,</p>
+                            <h3 id="date" class="text-lg font-bold text-[#00303C]">July 28 2025</h3>
                         </div>
                     </div>
 
@@ -96,7 +96,7 @@
                                 <p class="text-sm text-[#00303C]">DeadLine</p>
                                 <p class="text-[#00303C]">21 March 2025</p>
                             </div>
-                            <button class="btn btn-primary">Complete</button>
+                            <button class="btn btn-primary completeButton">Complete</button>
 
                         </div>
 
@@ -116,7 +116,7 @@
                                 <p class="text-sm text-[#00303C]">DeadLine</p>
                                 <p class="text-[#00303C]">17 April 2025</p>
                             </div>
-                            <button class="btn btn-primary">Complete</button>
+                            <button class="btn btn-primary completeButton">Complete</button>
 
                         </div>
 
@@ -137,7 +137,7 @@
                                 <p class="text-sm text-[#00303C]">DeadLine</p>
                                 <p class="text-[#00303C]">01 May 2025</p>
                             </div>
-                            <button class="btn btn-primary">Complete</button>
+                            <button class="btn btn-primary completeButton">Complete</button>
 
                         </div>
 
@@ -157,7 +157,7 @@
                                 <p class="text-sm text-[#00303C]">DeadLine</p>
                                 <p class="text-[#00303C]">27 Jun 2025</p>
                             </div>
-                            <button class="btn btn-primary">Complete</button>
+                            <button class="btn btn-primary completeButton">Complete</button>
 
                         </div>
 
@@ -179,7 +179,7 @@
                                 <p class="text-sm text-[#00303C]">DeadLine</p>
                                 <p class="text-[#00303C]">20 September 2025</p>
                             </div>
-                            <button class="btn btn-primary">Complete</button>
+                            <button class="btn btn-primary completeButton">Complete</button>
 
                         </div>
 
@@ -200,7 +200,7 @@
                                 <p class="text-sm text-[#00303C]">DeadLine</p>
                                 <p class="text-[#00303C]">16 December 2025</p>
                             </div>
-                            <button class="btn btn-primary">Complete</button>
+                            <button class="btn btn-primary completeButton">Complete</button>
 
                         </div>
 
@@ -225,12 +225,12 @@
                     <img class="w-6 h-6" src="assets/activity.png" alt="reload">
                     <span class="font-medium text-xl text-[#00303C]">Activity Log</span>
                 </div>
-                <button class="btn btn-primary mb-6">Clear History</button>
+                <button id="clearHistory" class="btn btn-primary mb-6">Clear History</button>
 
-                <!-- Dynamic Data Lodade here -->
-                <div class="flex flex-col gap-4">
-
-                    <p class="bg-gray-100 p-2 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                <div id="historyBox" class="flex flex-col gap-4">
+                    
+                    <!-- Dynamic Data Lodade here -->
+                    
 
 
                 </div>
@@ -244,6 +244,8 @@
     </main>
 
 
+
+    <script src="js/completeAction.js"></script>
 </body>
 
 </html>
