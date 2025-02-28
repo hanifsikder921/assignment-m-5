@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" bg-blue-50 mx-auto">
+
+    
+    <header class="pt-6 container mx-auto">
+
+        <nav class="flex justify-between items-center bg-white p-6 shadow rounded-lg">
+
+            <div class="flex gap-2 items-center">
+                <img src="assets/logo.png" alt="">
+                <h3 class="text-4xl">dev<span class="font-bold text-[#00303C]">Board</span></h3>
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <button id="backButton" class="btn btn-primary">Back to Desk</button>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+    <main class="container mx-auto py-6">
+
+        <h2 class="text-3xl text-center font-bold">Blogs</h2>
+
+        <div id="questionContainer" class="my-4">
+            <!-- Dynamic Question Loaded Here -->
+
+            <!-- <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold" >Question-1: What are the different ways to select an element in the DOM?</h3>
+                <hr class="my-1">
+                <p class="text-lg w-11/12">In JavaScript, there are several ways to select elements in the DOM (Document Object Model). Below are the most common methods  Below are the most common methods</p>
+            </div> -->
+        </div>
+
+    </main>
+
+
+
+    <script src="js/question.js"></script>
+</body>
+
+</html>

@@ -98,16 +98,24 @@ function DateSetup() {
     const day = today.getDate();
     const year = today.getFullYear();
 
-    const dateField=document.getElementById("date");
+    const dateField = document.getElementById("date");
 
 
-    if(day<9){
-        dateField.innerText = monthName +' 0'+day+', '+year;
-    }else{
-        dateField.innerText = monthName +' '+day+', '+year;
+    if (day < 9) {
+        dateField.innerText = monthName + ' 0' + day + ', ' + year;
+    } else {
+        dateField.innerText = monthName + ' ' + day + ', ' + year;
     }
-    document.getElementById("dayName").innerText = dayName+',';
+    document.getElementById("dayName").innerText = dayName + ',';
 }
 
 DateSetup();
 
+
+
+const questionButton = document.getElementById("question");
+questionButton.addEventListener("click", function () {
+
+    window.location.href="question.html"
+
+})
