@@ -16,7 +16,94 @@
 </head>
 
 
-<body>
+<body class=" bg-blue-100 mx-auto">
+
+    <header class="pt-6 container mx-auto">
+
+        <nav class="flex justify-between items-center bg-white p-6 shadow rounded-lg">
+
+            <div class="flex gap-2 items-center">
+                <img src="assets/logo.png" alt="">
+                <h3 class="text-4xl">dev <span class="font-bold">Board</span></h3>
+            </div>
+
+            <div class="flex gap-3 items-center">
+                <img class="w-10" src="assets/checkbox.png" alt="checkbox">
+                <span class="text-4xl font-bold mr-10">23</span>
+                <img src="assets/theme-btn.png" alt="themeButton">
+            </div>
+
+        </nav>
+
+
+    </header>
+
+
+    <main class="container mx-auto py-6">
+
+        <!-- Main Content Section -->
+        <section class="grid grid-cols-4 gap-6">
+
+            <!-- Left Side Div -->
+            <div class="col-span-3 bg-white p-6 rounded-lg">
+
+                <!-- top Box -->
+                <div class="grid grid-cols-4 gap-6">
+                    <!-- left -->
+                    <div class="flex col-span-1 p-6 bg-gray-100 rounded-xl items-center gap-5 font-medium text-base text-gray-500">
+                        <img  class="w-8 h-8" src="assets/checkbox.png" alt="checkbox">
+                        <div>
+                            <p>Task Asssigned</p>
+                            <h3 class="text-2xl font-bold text-gray-900">05</h3>
+                        </div>
+                    </div>
+
+                    <!-- center -->
+                    <div class=" center-div flex col-span-2 bg-red-300 p-6 rounded-xl items-center gap-5">
+                        <img src="assets/board.png" alt="checkbox">
+                        <div>
+                            <p class="font-medium text-2xl text-white">Discover Something <br>New Today</p>
+                        </div>
+                    </div>
+
+                    <!-- right -->
+                    <div class="flex col-span-1 p-6 bg-gray-100 rounded-xl items-center gap-5">
+                        <img class="w-10 h-10" src="assets/calender.png" alt="calender">
+                        <div>
+                            <p class="text-xl">Wed,</p>
+                            <h3 class="text-xl font-bold text-gray-800">July 28 2025</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Right Side Div -->
+            <div class=" col-span-1 bg-white rounded-lg p-6 items-center flex flex-col gap-3">
+                <div class="flex gap-4 justify-center items-center">
+                    <img class="w-6 h-6" src="assets/activity.png" alt="reload">
+                    <span class="font-medium text-xl">Activity Log</span>
+                </div>
+                <button class="btn btn-primary mb-6">Clear History</button>
+
+                <!-- Dynamic Data Lodade here -->
+                <div class="flex flex-col gap-4">
+
+                    <p class="bg-gray-100 p-2 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                    
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
 
 
 
