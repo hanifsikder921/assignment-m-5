@@ -1,17 +1,25 @@
-document.getElementById("backButton").addEventListener("click",function(){
+document.getElementById("backButton").addEventListener("click", function () {
 
-    window.location.href="index.html";
+    window.location.href = "index.html";
 });
 
 
 
 
-const questionContainer=document.getElementById("questionContainer");
+const questionContainer = document.getElementById("questionContainer");
 
 const questions = [
     {
         question: "What are the different ways to select an element in the DOM?",
-        answer: "There are many ways to select elements in the DOM, such as using querySelector, querySelectorAll, getElementsByTagName, getElementsByClassName, and getElementById"
+        answer: `
+                 Therre are Many Ways to Select an Element:
+                 getElementById() – Selects an element by its id.
+                 getElementsByTagName() – Selects elements by their tag name.
+                 getElementsByClassName() – Selects elements by their class name.
+                 querySelector() – Selects the first matching element.
+                 querySelectorAll() – Selects all matching elements as a NodeList.
+        
+        `
     },
 
     {
@@ -20,20 +28,21 @@ const questions = [
     },
     {
         question: "What is event delegation in the DOM?",
-        answer: " "
+        answer: "Event Delegation is a powerful technique in JavaScript where an event listener is added to a parent element instead of individual child elements. When an event occurs on any child element, it is captured using event bubbling, allowing the parent to handle the event efficiently."
     },
     {
         question: "What is event bubbling in the DOM?",
-        answer: " "
+        answer: "Event Bubbling is an event propagation mechanism in the DOM where an event triggered on a child element propagates up through its parent, grandparent, and other ancestor elements."
     },
     {
         question: "How do you create, add, and remove elements using JavaScript?",
-        answer: " "
-    },
+        answer: "Create element: document.createElement(); \nRemove Element: elementName.remove(); \nRemove  Child Element: parentElement.innerHTML = '' ''; "
+    }
+
 
 ]
 
-let questionNumber = 1; 
+let questionNumber = 1;
 for (const question of questions) {
     const questionDiv = document.createElement("div");
     questionDiv.className = "bg-white p-6 rounded-lg shadow-md my-4";
@@ -42,22 +51,22 @@ for (const question of questions) {
     questionHeading.className = "text-xl font-bold";
     questionHeading.innerText = `Question-${questionNumber}: ${question.question}`;
 
-    
+
     const hr = document.createElement("hr");
     hr.className = "my-1";
 
- 
+
     const questionAnswer = document.createElement("p");
     questionAnswer.className = "text-lg w-11/12";
     questionAnswer.innerText = question.answer;
 
-   
+
     questionDiv.appendChild(questionHeading);
     questionDiv.appendChild(hr);
     questionDiv.appendChild(questionAnswer);
 
-   
+
     questionContainer.appendChild(questionDiv);
 
-    questionNumber++; 
+    questionNumber++;
 }
