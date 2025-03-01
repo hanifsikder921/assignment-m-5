@@ -18,7 +18,6 @@ const questions = [
                  getElementsByClassName() – Selects elements by their class name.
                  querySelector() – Selects the first matching element.
                  querySelectorAll() – Selects all matching elements as a NodeList.
-        
         `
     },
 
