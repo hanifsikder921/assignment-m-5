@@ -36,7 +36,7 @@ const questions = [
     },
     {
         question: "How do you create, add, and remove elements using JavaScript?",
-        answer: "Create element: document.createElement(); \nRemove Element: elementName.remove(); \nRemove  Child Element: parentElement.innerHTML = '' ''; "
+        answer: "Create element: document.createElement('div'); \ndocument.body.appendChild(newCreateElementName); \nRemove Element: elementName.remove(); \nRemove  Child Element: parentElement.innerHTML = '' ''; "
     }
 
 
